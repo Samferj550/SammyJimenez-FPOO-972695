@@ -18,6 +18,8 @@ def generate_people (num_people: int)
             "lastname": fake.last_name (),
             "role": random.randint (1,3)
         }
+        people_list.append (person)
+    return people_list
 
 def select_role ():
     for person in people_list:
